@@ -1,0 +1,798 @@
+    1  mkdir CIT173_Lab4
+    2  ls /dev
+    3  ls /dev > ~/CIT173_Lab4/my-dev-nodes.txt
+    4  cat ~/CIT173_Lab4/my-dev-nodes.txt 
+    5  head -c1024 /dev/random
+    6  head -c1024 /dev/random > ~/CIT173_Lab4/mymodules-1.txt
+    7  cat ~/CIT173_Lab4/mymodules-1.txt 
+    8  lsmod
+    9  lsmod > ~/CIT173_Lab4/mymodules-1.txt 
+   10  uname -a
+   11  lsmod
+   12  modinfo nfs
+   13  modinfo nfs > ~/CIT173_Lab4/my-nfs-info.txt
+   14  insmod nfs
+   15  modprobe nfs
+   16  sudo modprobe nfs
+   17  exit
+   18  history
+   19  lsmod
+   20  lsmod > ~/CIT173_Lab4/mymodules-2.txt
+   21  sudo rmmod nfs
+   22  lsmod
+   23  lsmod > ~/CIT173_Lab4/mymodules-3.txt
+   24  root -i
+   25  sudo -i
+   26  whoami
+   27  sudo -i
+   28  ls -l/dev > ~/CIT173_Lab4/my-newdev-nodes.txt
+   29  ls -l /dev > ~/CIT173_Lab4/my-newdev-nodes.txt
+   30  mkfs -t ext4 /dev/sda1
+   31  sudo -i
+   32  ls /dev
+   33  ls /dev > ~/CIT173_Lab4/my-dev-nodes.txt 
+   34  sudo -i
+   35  pwd
+   36  cd /mount
+   37  mount man
+   38  man mount
+   39  sudo -i
+   40  mount > ~/CIT173_Lab4/my-mounts.txt
+   41  df
+   42  df > ~/CIT173_Lab4/my-disk-usage.txt
+   43  umount /mnt/data
+   44  sudo -i
+   45  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+   46  pwd
+   47  cd ~/CIT173_Lab4
+   48  git init
+   49  git remote add origin https://github.com/ICPICKLES/CIT173_Lab4.git
+   50  git add --all
+   51  git commit -m "Lab assignment 4"
+   52  git push origin master
+   53  history
+   54  whoami
+   55  mkdir CIT173_Lab5
+   56  ls -l etc/fstab
+   57  ls -l /etc/fstab
+   58  ls /etc/fstab
+   59  cat /etc/fstab
+   60  df /etc/fstab
+   61  df
+   62  /etc/fstab
+   63  sudo /etc/fstab
+   64  sudo-i
+   65  sudo -i
+   66  df
+   67  mount
+   68  blkid
+   69  sudo mount
+   70  du
+   71  df
+   72  more /etc/fstab
+   73  mount -o auto /dev/sdb1 /mnt/data
+   74  sudo mount -o auto /dev/sdb1 /mnt/data
+   75  RTArocks1
+   76  sudo -i
+   77  mount
+   78  df /mnt/backup
+   79  df /mnt/data
+   80  df /mnt
+   81  df
+   82  ls /mnt
+   83  ls -ls /mnt
+   84  ls -l /mnt
+   85  ls /dev
+   86  du /dev/sdb
+   87  du /dev
+   88  cat /dev
+   89  ls /mnt
+   90  ls /mnt/backup
+   91  df
+   92  more /etc/fstab
+   93  ls /etc/fstab
+   94  ls -l /etc/fstab
+   95  /etc/fstab |less
+   96  sudo /etc/fstab | less
+   97  /etc/fstab
+   98  sudo -i
+   99  sudo umount -a
+  100  df
+  101  fdisk -l
+  102  sudo -i
+  103  ps
+  104  ps /
+  105  ls /proc
+  106  ps -a
+  107  ls /proc/1680
+  108  ls /proc/1680/status
+  109  cat /proc/1680
+  110  cat /proc/1690/status
+  111  cat /proc
+  112  ls /proc
+  113  ls -l /proc
+  114  vi /etc/fstab
+  115  jobs
+  116  fg
+  117  man jobs
+  118  fg
+  119  sudo -i
+  120  sudo gedit /etc/fstab
+  121  env
+  122  sudo -i
+  123  sudo -E gedit /etc/fstab
+  124  whoami
+  125  sudo -i
+  126  sudo -E gedit /etc/fstab
+  127  cat /etc/fstab
+  128  mount -l
+  129  cp /etc/fstab ~/CIT173_Lab5/my-fstab.txt
+  130  ls- l ~/CIT173_Lab5/my-fstab.txt 
+  131  ls -l ~/CIT173_Lab5/my-fstab.txt 
+  132  cat ~/CIT173_Lab5/my-fstab.txt 
+  133  ls
+  134  dd if=/dev/random of=data_file1.dat
+  135  rm data_file1.dat 
+  136  dd if=/dev/random of=data_file1.dat bs=1k count=1
+  137  rm data_file1.dat 
+  138  dd if=/dev/random of=data_file1.dat bs=1K count=10
+  139  cat data_file1.dat
+  140  ls data_file1.dat
+  141  ls-l data_file1.dat
+  142  ls -l data_file1.dat 
+  143  cp data_file1.dat /mnt/data
+  144  sudo cp data_file1.dat /mnt/data
+  145  cat /mount/data
+  146  mount -l
+  147  dd if=/dev/random of=data_file2.dat bs=1K count=10
+  148  cp data_file2.dat /mnt/data
+  149  sudo cp data_file2.dat /mnt/data
+  150  dd if=/dev/random of=backup_file2.dat bs=1K count=10
+  151  sudo cp backup_file1.dat /mnt/data
+  152  sudo cp backup_file2.dat /mnt/data
+  153  dd if=/dev/random of=backup_file1.dat bs=1K count=10
+  154  sudo cp backup_file1.dat /mnt/backup
+  155  sudo cp backup_file2.dat /mnt/backup
+  156  cp backup_file1.dat backup_file2.dat data_file1.dat data_file2.dat ~/CIT173_Lab5
+  157  ls ~/CIT173_Lab5
+  158  df
+  159  df> ~/CIT173_Lab5/my-disk-space.txt
+  160  uname -a
+  161  /proc/cpuinfo
+  162  sudo /proc/cpuinfo
+  163  lscpu
+  164  free -g
+  165  free-a
+  166  cat /proc/meminfo | grep MemTotal
+  167  ulimit -a
+  168  cat /proc/*/smaps
+  169  cat /proc/*/smaps | grep stack
+  170  sudo cat /proc/*/smaps | grep stack
+  171  clear
+  172  free -a
+  173  free -b
+  174  cat/procfs
+  175  cat /procfs
+  176  cat /proc | grep cpu
+  177  cat /proc
+  178  ls -l /proc
+  179  cat /proc/loadavg
+  180  history
+  181  uptime
+  182  cat /proc/loadavg
+  183  top
+  184  cat /proc/uptime
+  185  cat /proc/bash
+  186  ps -ef /proc
+  187  ls /proc
+  188  cat /proc/stat
+  189  cat /proc/status
+  190  cd /proc
+  191  cat stat
+  192  cd /
+  193  cd home
+  194  cd 
+  195  ls /proc
+  196  cat /proc/fs
+  197  ls /proc/fs
+  198  ls /proc/fb
+  199  ulimit -s
+  200  cat /proc/8192
+  201  cat /proc/8192/*
+  202  man ulimit
+  203  jobs
+  204  history>~/CIT173_Lab5/my-history4me.txt > ~/CIT173_Lab5
+  205  history>~/CIT173_Lab5/my-history4me.txt
+  206  ls /proc/1680/status
+  207  ps
+  208  ps /
+  209  ps -a
+  210  cat /proc/1973
+  211  ls /proc/1973
+  212  ls /proc/1973/stack
+  213  cat /proc/1973/stack
+  214  sudo cat /proc/1973/stack
+  215  ps -e
+  216  cat /proc/1567/*
+  217  ls  /proc/1567/dbus*
+  218  cat  /proc/1567/dbus
+  219  ps /proc/1567/dbus-deamon
+  220  cat  /proc/1567/dbus-deamon
+  221  ps -e
+  222  cat  /proc/1567/dbus-daemon
+  223  cat  /proc/1567
+  224  cat /usr/bin/dbus-daemon
+  225  ls /usr/bin/dbus-daemon
+  226  /usr/bin/dbus-daemon
+  227  /proc/1567
+  228  ls /proc/1567
+  229  ls /proc/1567/status
+  230  cat /proc/1567/status
+  231  fbset
+  232  sudo fbset
+  233  sudo fbset -i
+  234  sudo fbset -h
+  235  sudo fbset -i -fb
+  236  sudo fbset -i
+  237  sudo fbset -s
+  238  fbset -fb /dev/fb0 vga
+  239  sudo fbset -fb /dev/fb0 vga
+  240  sudo fbset -fb /dev/fb0
+  241  /dev/fb0
+  242  sudo /dev/fb0
+  243  mode "800x600"
+  244      geometry 800 600 1176 885 32
+  245      timings 0 0 0 0 0 0 0
+  246      rgba 8/16,8/8,8/0,0/0
+  247  endmode
+  248  ulimit -S -a
+  249  ulimit -S -a limit
+  250  my-procfs.txt > ~/CIT173_Lab5
+  251  cp my-procfs.txt > ~/CIT173_Lab5
+  252  cp my-procfs.txt  ~/CIT173_Lab5
+  253  ls ~/CIT173_Lab5
+  254  ls ~/CIT173_Lab5/my-procfs.txt 
+  255  cat ~/CIT173_Lab5/my-procfs.txt 
+  256  ls /sys/class/leds.
+  257  ls /sys/class/leds/
+  258  ls '/sys/class/leds/input1::capslock'
+  259  cat '/sys/class/leds/input1::capslock/max_brightness'
+  260  echo 1 | sudo tee '/sys/class/leds/input5::capslock/brightness'
+  261  echo 1 | sudo tee '/sys/class/leds/input1::capslock/max_brightness'
+  262  sudo echo 1 | sudo tee '/sys/class/leds/input1::capslock/max_brightness'
+  263  echo 1 | sudo tee '/sys/class/leds/input1::capslock/max_brightness'
+  264  root -i
+  265  sudo -i
+  266  cat '/sys/class/leds/input1::capslock/max_brightness'
+  267  cat '/sys/class/leds/input1::capslock/brightness'
+  268  echo 1 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  269  echo 0 | sudo tee '/sys/class/leds/input1::capslock/brightness'
+  270  history > ~/CIT173_Lab5/my-command-history.txt
+  271  cd ~/CIT173_Lab5
+  272  git init
+  273  git remote add origin https://github.com/ICPickles/CIT173_Lab5.git
+  274  git add --all
+  275  git commit -m "Lab assignment 5"
+  276  git push origin master 
+  277  clear
+  278  cd home
+  279  mkdir ~/CIT173_Lab6
+  280  sudo groupadd actors directors producers 
+  281  ls /etc/group
+  282  ls -l /etc/group
+  283  sudo groupadd actors
+  284  ls -l /etc/group
+  285  ls /etc/group
+  286  cat /etc/group
+  287  sudo groupadd directors
+  288  sudo groupadd producers
+  289  cat /etc/group
+  290  su cfisher
+  291  su mhamill
+  292  su gkurtz
+  293  passwd gkurtz
+  294  sudo passwd gkurtz
+  295  sudo passwd gkurtz322
+  296  322sudo passwd gkurtz322
+  297  sudo cp /etc/passwd ~/CIT173_Lab6
+  298  su gkurtz
+  299  sudo chmod g+x /var/StarWars/finance/star-wars-budget.txt 
+  300  ls -l /var/StarWars/finance/star-wars-budget.txt 
+  301  su gkurtz
+  302  su gkurtz 
+  303  su glucas
+  304  cd /var
+  305  man tar
+  306  tar -cd /var/StarWars StarWars.tar
+  307  tar--help
+  308  tar -czvf StarWars.tar /var/StarWars
+  309  sudo tar -czvf StarWars.tar /var/StarWars
+  310  cp StarWars.tar ~/CIT173_Lab6
+  311  ~
+  312  cd ~
+  313  ls ~/CIT173_Lab6
+  314  cd ~/CIT173_Lab6
+  315  git init
+  316  git remote add origin https://github.com/ICPickles/CIT173_LAB6.git
+  317  git add --all
+  318  git commit -m "Lab assignment 6"
+  319  git push origin master
+  320  useradd man
+  321  userdel man
+  322  cat /etc/groups/man
+  323  man useradd
+  324  man passwd
+  325  sudo useradd -m -g 1001 Mark Hamill
+  326  cat /etc/users
+  327  cat /etc/password
+  328  cat /etc/passwd
+  329  sudo useradd -m Mark Hamill
+  330  echo Mark Hamill
+  331  passwd Mark Hamill
+  332  sudo -i
+  333  sudo Mark_Hamill
+  334  groupdel Mark_hamill
+  335  groupdel MarkHamill
+  336  sudo groupdel MarkHamill
+  337  cat /etc/groups
+  338  cat /etc/group
+  339  cat /etc/passwd
+  340  sudo usermod -l Mark_Hamill
+  341  sudo usermod -l MarkHamill Mark_Hamill
+  342  sudo usermod -l Mark_Hamill MarkHamill
+  343  cat /etc/passwd
+  344  sudo usermod -l mhamill Mark_Hamill
+  345  cat /etc/passwd
+  346  sudo useradd -m Harrison_Ford
+  347  sudo -i
+  348  cat /etc/groups
+  349  /etc/group
+  350  sudo -i
+  351  man cp
+  352  sudo cp /etc/passwd ~/CIT173_Lab6
+  353  sudo cp /etc/groups ~/CIT173_Lab6
+  354  sudo cp /etc/group ~/CIT173_Lab6
+  355  history > ~/CIT173_Lab6/ex1-command-history.txt
+  356  sudo -i
+  357  echo $PATH
+  358  history
+  359  sudo -i
+  360  sudo history
+  361  sudo -i
+  362  clear
+  363  wget https://github.com/RenoTechnologyAcademy/CIT173_Lab6_Files/archive/master.tar.gz
+  364  tar -xvf master.tar.gz
+  365  mkdir /var/StarWars chmod a+x /var/StarWars
+  366  sudo mkdir /var/StarWars chmod a+x /var/StarWars
+  367  ls
+  368  rmdir a+x chmod
+  369  ls
+  370  ls /var
+  371  chmod a+x /var/StarWars
+  372  sudo chmod a+x /var/StarWars
+  373  ls /var/StarWars/
+  374  s /var/StarWars
+  375  cat /var/StarWars/
+  376  cd /var
+  377  ls -l
+  378  cd ~
+  379  cd /var
+  380  mkdir finance
+  381  sudo mkdir finance
+  382  ls-l
+  383  ls -l
+  384  cd ~
+  385  ls -l /var
+  386  echo $PATH /var/StarWars
+  387  echo $PATH /var/finance
+  388  rmdir /var/finance
+  389  sudo rmdir /var/finance
+  390  ls /var
+  391  cd /var/StarWars
+  392  mkdir finance
+  393  sudo mkdir finance
+  394  ls /var/StarWars
+  395  sudo mkdir directing creative
+  396  ls /var/StarWars
+  397  cd ~
+  398  sudo mv star-wars-budget.txt /var/StarWars/finance
+  399  sudo mv master/star-wars-budget.txt /var/StarWars/finance/
+  400  ls star-wars-budget.txt
+  401  tar -z master.tar.gz
+  402  tar -xvz master.tar.gz
+  403  tar -xvzf master.tar.gz
+  404  sudo mv star-wars-budget.txt /var/StarWars/finance
+  405  tar xvzf master.tar.gz
+  406  ls star-wars-budget.txt
+  407  tar -xvzf master.tar.gz star-wars-budget.txt
+  408  tar archive.tar CIT173_Lab6_Files-master/star-wars-budget.txt CIT173_Lab6_Files-master/star-wars-journal.txt CIT173_Lab6_Files-master/star-wars-script.txt
+  409  tar --help
+  410  tar -cf archive.tar CIT173_Lab6_Files-master/star-wars-budget.txt CIT173_Lab6_Files-master/star-wars-journal.txt CIT173_Lab6_Files-master/star-wars-script.txt
+  411  history
+  412  tar -tvf master.tar.gz
+  413  tar -xvzf master.tar.gz master/star-wars-budget.txt
+  414  tar -xvzf master.tar.gz star-wars-budget.txt
+  415  tar -xvzf master.tar.gz CIT173_Lab6_Files-master/star-wars-budget.txt
+  416  tar -xvzf master.tar.gz CIT173_Lab6_Files-master/star-wars-journal.txt
+  417  tar -xvzf master.tar.gz CIT173_Lab6_Files-master/
+  418  tar -xvzf master.tar.gz CIT173_Lab6_Files-master/star-wars-script.txt
+  419  sudo mv CIT173_Lab6_Files-master/star-wars-budget.txt /var/StarWars/finance
+  420  ls /var
+  421  ls /var/StarWars
+  422  sudo mv CIT173_Lab6_Files-master/star-wars-journal.txt /var/StarWars/directing
+  423  sudo mv CIT173_Lab6_Files-master/star-wars-script.txt /var/StarWars/creative
+  424  ls /var/StarWars/creative
+  425  ls /var/StarWars/finance
+  426  ls -l /var/StarWars/finance
+  427  chown gkurtz star-wars-budget.txt
+  428  chown gkurtz /var/StarWars/finance/star-wars-budget.txt
+  429  sudo chown gkurtz /var/StarWars/finance/star-wars-budget.txt
+  430  ls -l /var/StarWars/finance
+  431  sudo chgrp producers /var/StarWars/finance/star-wars-budget.txt 
+  432  ls -l /var/StarWars/finance
+  433  man chmod
+  434  help chmod
+  435  info chmod
+  436  sudo chmod u+x g-w o-r /var/StarWars/finance/star-wars-budget.txt 
+  437  ls -l /var/StarWars/finance
+  438  sudo chmod g-w /var/StarWars/finance/star-wars-budget.txt 
+  439  sudo chmod o-r /var/StarWars/finance/star-wars-budget.txt 
+  440  ls -l /var/StarWars/finance
+  441  sudo chown glucas /var/StarWars/directing/star-wars-script.txt
+  442  sudo chown glucas /var/StarWars/directing/star-wars-journal.txt
+  443  sudo chmod -R u+x /var/StarWars/finance/star-wars-budget.txt 
+  444  sudo chmod -R o-r /var/StarWars/finance/star-wars-budget.txt 
+  445  sudo chmod -R g-w /var/StarWars/finance/star-wars-budget.txt 
+  446  sudo chgrp directors /var/StarWars/directing/star-wars-journal.txt 
+  447  ls -l /var/StarWars/directing/star-wars-journal.txt 
+  448  sudo chmod -R u+x /var/StarWars/directing/star-wars-journal.txt 
+  449  sudo chmod -R g+x /var/StarWars/directing/star-wars-journal.txt 
+  450  sudo chmod -R o-x /var/StarWars/directing/star-wars-journal.txt 
+  451  sudo chown glucas /var/StarWars/creative/star-wars-script.txt 
+  452  sudo chgrp actors /var/StarWars/creative/star-wars-script.txt 
+  453  ls -l /var/StarWars/creative/star-wars-script.txt 
+  454  sudo chmod -R u+x /var/StarWars/creative/star-wars-script.txt 
+  455  sudo chmod -R g-w+x /var/StarWars/creative/star-wars-script.txt 
+  456  sudo chmod -R o-r /var/StarWars/creative/star-wars-script.txt 
+  457  ls -l /var/
+  458  ls -l /var/StarWars/creative/star-wars-script.txt 
+  459  history>~/CIT173_Lab6/ex02-my-command-history.txt
+  460  su mhamill
+  461  history
+  462  sudo -i
+  463  history
+  464  sudo history
+  465  sudo -i
+  466   cat /etc/default/grub
+  467   cat /etc/default/grub.cfg |grep Manjaro
+  468   cat /etc/default/grub | grep Manjaro
+  469  cat /boot/grub2/grub.cfg | grep Manjaro
+  470  sudo cat /boot/grub2/grub.cfg | grep Manjaro
+  471  sudo cat /boot/grub2/grub.cfg 
+  472  clear
+  473  userdel Harrison Ford
+  474  userdel -r hford
+  475  sudo userdel -r hford
+  476  sudo userdel -r cfisher
+  477  sudo userdel -r glucas
+  478  sudo userdel -r gkountz
+  479  users
+  480  users -l
+  481  cat /etc/passwd
+  482  sudo userdel -r mhamill
+  483  sudo userdel -r gkurtz
+  484  cat /boot/grub/grub.cfg
+  485  cat /boot/grub/*.cfg
+  486  cat /etc/inittab
+  487  systemctl
+  488  runlevel
+  489  cat /etc/inittab
+  490  sudo cat /boot/grub2
+  491  sudo ls  /boot/grub2
+  492  ls -l /boot/grub2
+  493  sudo ls -l /boot/grub2
+  494   /boot/grub2
+  495  /boot/grub/grub/cfg
+  496  sudo -i
+  497  mkdir CIT173_Lab7
+  498  /mnt
+  499  cat /mnt
+  500  ls /mnt
+  501  df
+  502  grep manjaro
+  503  grep manjaro /dev
+  504  grep  /dev manjaro
+  505  grep /dev/Sd*
+  506  dd
+  507  scsi3
+  508  cat /dev
+  509  ls -l /dev
+  510  mount /dev/sdc /mnt/majaro
+  511  sudo mount /dev/sdc /mnt/majaro
+  512  mkdir /mnt/manjaro
+  513  sudo mkdir /mnt/manjaro
+  514  sudo mount /dev/sdc /mnt/majaro
+  515  ls -l
+  516  ls -l /dev
+  517  ls -ld
+  518  ld
+  519  ls -d
+  520  ls -a
+  521  cat /dev/sdc
+  522  sudo cat /dev/sdc
+  523  sudo ls  /dev/sdc
+  524  sudo ls-l  /dev/sdc
+  525  sudo ls -l  /dev/sdc
+  526  man ls
+  527  ls -d
+  528  ls -d -l
+  529  sudo ls /mnt
+  530  sudo ls-l /mnt
+  531  sudo ls -l /mnt
+  532  sudo ls -l m1803/majaro/x86_64
+  533  top
+  534  sudo ls /media
+  535  sudo ls -l  /media
+  536  /usr
+  537  /media
+  538  cat /media
+  539  ls /media
+  540  ls /usr
+  541  ls /bin
+  542  sudo cat /mnt
+  543  sudo ls /mnt
+  544  sudo ls -a /mnt
+  545  ls /dev/sdc
+  546  cat /dev/sdc
+  547  sudo cat /dev/sdc
+  548  sudo ls -l /dev/sdc
+  549  find manjaro
+  550  cd /
+  551  /manjrootsys
+  552  ~/manjrootsys
+  553  ls -l ~/manjrootsys
+  554  sudo chown u+x ~/manjrootsys
+  555  sudo chmod u+x ~/manjrootsys
+  556  ls -l ~/manjrootsys
+  557  mount /mnt/manjaro ~/manjrootsys
+  558  sudo mount /mnt/manjaro ~/manjrootsys
+  559  mkfs -t ext4 /dev/sdc
+  560  sudo mkfs -t ext4 /dev/sdc
+  561  df
+  562  history
+  563  ls -l /dev
+  564  dd
+  565  clear
+  566  ls -l /mnt/manjaro/boot/grub/defaults.cfg
+  567  sudo -i
+  568  man sed
+  569  info sed
+  570  info chgrp
+  571  man chgrp
+  572  vi /etc/boot/boot.cfg
+  573  history
+  574  sudo -i
+  575  vi /boot/grub2/grub
+  576  sudo vi /boot/grub2/grub
+  577  history
+  578  sudo -i
+  579  cat /mnt/manjaro
+  580  /mnt
+  581  sudo ls /mnt
+  582  vi /mnt/manjaro/etc/boot/grub.cfg
+  583  vi /mnt/manjaro/etc/boot/grub/grub.cfg
+  584  ls /mnt/manjaro/etc/boot
+  585  ls /mnt/manjaro/boot
+  586  ls -l /mnt/manjaro
+  587  cat /mnt/manjaro
+  588  ls /mnt/manjaro
+  589  vi /mnt/manjaro/boot/grub.cfg1
+  590  vi /etc/boot/grub/grub2.cfg
+  591  history
+  592  vi /etc/boot/boot.cfg
+  593  cat /etc
+  594  ls /etc
+  595  vi /etc/grub2.cfg
+  596  sudo vi /etc/grub2.cfg
+  597  mount /dev/sdc1 /mnt/manjaro
+  598  sudo mount /dev/sdc1 /mnt/manjaro
+  599  cd /mnt/manjaro
+  600  ls 0l
+  601  ls -l
+  602  sudo ls /etc
+  603  sudo ls /etc/grub2.cfg
+  604  sudo vi /etc/grub2.cfg
+  605  sudo cp /etc/grub2.cfg > ~/CIT173_Lab7
+  606  cp /etc/grub2.cfg > ~/CIT173_Lab7
+  607  cp /etc/grub2.cfg ~/CIT173_Lab7
+  608  sudo cp /etc/grub2.cfg ~/CIT173_Lab7
+  609  cd ~/CIT173_Lab7
+  610  git init
+  611  git remote add origin https://github.com/ICPickles/CIT173_Lab7.git
+  612  git add --all
+  613  git commit -m "Lab assignment 7"
+  614  git push origin master
+  615  sudo vi /etc/grub2.cfg
+  616  sudo cp /etc/grub2.cfg ~/CIT173_Lab7
+  617  cd ~/CIT173_Lab7
+  618  git init
+  619  git remote add origin https://github.com/ICPickles/CIT173_Lab7.git
+  620  git add --all
+  621  git commit -m "Lab assignment 7"
+  622  git push origin master
+  623  mkdir ~/CIT173_Lab10
+  624  tail -25 /var/log/kern.log
+  625  ls /var/log
+  626  sudo tail -25 /var/log/kern.log
+  627  ls /var/log
+  628  sudo service rsyslog restart
+  629  sudo yum -y reinstall rsyslog
+  630  set
+  631  clear
+  632  top
+  633  sudo yum -y reinstall rsyslog
+  634  kill 2481
+  635  sudo tail -25 journalctl -k
+  636  man journalctl
+  637  sudo journalctl -k -25
+  638  sudo journalctl -25 -k
+  639  man journalctl
+  640  man journalctl -k -n25
+  641  sudo -i
+  642  sudo ls -l /var/log/journal/*
+  643  journalctl
+  644  journalctl -k
+  645  journalctl -k25
+  646  journalctl -kn
+  647  journalctl -kn 25
+  648  journalctl -kn 25 > ~/CIT173_Lab10/my-system-log.txt
+  649  logger "I've fallen and I can't get up."
+  650  ls -l /var/log/syslog
+  651  /var/log/messages
+  652  journalctl -n1
+  653  journalctl -rn
+  654  journalctl -rn _transport=user
+  655  journalctl -rn _TRANSPORT=user
+  656  logger I've fallen and I can't get up.
+  657  journalctl -rn _TRANSPORT=user
+  658  journalctl -rn
+  659  man logger
+  660  journalctl -r
+  661  journalctl -r > ~/CIT173_Lab10
+  662  journalctl -r > ~/CIT173_Lab10/my-system-log.txt
+  663  sudo nano /etc/syslog.conf
+  664  yum install nano
+  665  sudo yum install nano
+  666  sudo nano /etc/syslog.conf
+  667  history-25
+  668  history -25
+  669  tail -25 history
+  670  history
+  671  cp /etc/syslog.conf ~/CIT173_Lab10/syslogd.conf
+  672  syslog.conf
+  673  ls syslog.conf
+  674  sudo nano syslog.conf
+  675  cat /etc
+  676  ls /etc
+  677  ls /etc/sysconfig
+  678  ls /etc/sysconfig.conf
+  679  ls /etc/rsyslog.conf
+  680  ls /etc/*.conf
+  681  ls /etc/sysctl.conf
+  682  sudo nano /etc/sysctl.conf
+  683  sudo yum -y install rsyslog
+  684  sudo nano rsyslog.conf
+  685  /etc/rsyslog.conf
+  686  sudo /etc/rsyslog,conf
+  687  sudo ls /etc/rsyslog,conf
+  688  sudo nano /etc/rsyslog.conf
+  689  cp /etc/rsyslog.conf ~/CIT173_Lab10/rsyslog.conf
+  690  sudo nano /etc/rsyslog.conf
+  691  ls -l /var/log/all-info.log
+  692  sudo nano /var/log/all-info.log
+  693  restart
+  694  reboot
+  695  ls /var
+  696  ls /var/log
+  697  ls /var/log/all-info.log
+  698  sudo nano /var/log/all-info.log
+  699  tail -25 /var/log/all-info.log
+  700  sudo tail -25 /var/log/all-info.log
+  701  sudo cp /var/log/all-info.log ~/CIT173_Lab10
+  702  sudo cp /var/log/all-warnings.log ~/CIT173_Lab10
+  703  cat ~/CIT173_Lab10
+  704  ls ~/CIT173_Lab10
+  705  sudo hwclock -s
+  706  sudo hwclock --show
+  707  sudo hwclock --setepoch 1970
+  708  sudo hwclock --set epoch 1970
+  709  manhwclock
+  710  man hwclock
+  711  sudo hwclock --setepoch -epoch1970
+  712  sudo hwclock -setepoch -epoch1970
+  713  man hwclock
+  714  sudo hwclock --setepoch --epoch 1970
+  715  hwclock --help
+  716  hwclock --getepoch
+  717  hwclock -r --getepoch
+  718  date
+  719  date [010100001970]
+  720  date [1100001970]
+  721  date []
+  722  man date
+  723  date [01010000[1970]]
+  724  date --help
+  725  date -d [01010000[1970]]
+  726  date -d 010100001970
+  727  date --date="1/01/1970"
+  728  date
+  729  date %Y%m%d-s "19700101"
+  730  date + %Y%m%d-s "19700101"
+  731  date+%Y%m%d-s "19700101"
+  732  date -s "01 JAN 1970 00:00:00"
+  733  sudo date -s "01 JAN 1970 00:00:00"
+  734  date
+  735  sudo yum -y ntpd
+  736  sudo yum -y install ntpd
+  737  yum install ntp ntpupdate ntp-doc
+  738  sudo yum install ntp ntpupdate ntp-doc
+  739  sudo yum install ntp ntpdate ntp-doc
+  740  sudo yum install ntp ntpdate
+  741  sudo yum install ntpd
+  742  sudo nano /etc/ntp.conf
+  743  sudo yum update
+  744  sudo yum update --force
+  745  sudo yum install ntpd --force
+  746  ls /etc/ntp.conf
+  747  /etc
+  748  ls /etc
+  749  sudo yum install ntp
+  750  sudo yum install ntp --force
+  751  ls /etc
+  752  sudo yum -y ntpd
+  753  sudo dnf install ntp
+  754  sudo update-ca-certificates
+  755  dnf clean packages
+  756  sudo ntpd
+  757  ntpd
+  758  yum -update
+  759  sudo yum -update
+  760  reboot
+  761  ntpd
+  762  root -i
+  763  sudo -iu
+  764  sudo -i
+  765  sudo nano /etc/ntp.conf
+  766  sudo systemctl start ntpd
+  767  date
+  768  touch it reset my time to regular > ~/CIT173_Lab10/whathappenedtotime.txt
+  769  sudo systemctl stop ntpd
+  770  date
+  771  sudo nano /etc/ntp.conf
+  772  sudo systemctl start ntpd
+  773  ntpq
+  774  sudo ntpdate 0.sg.pool.ntp.conf
+  775  sudo -i
+  776  date
+  777  sudo systemctl start ntpd
+  778  date
+  779  sudo ntpdate 0.sg.pool.ntp.conf
+  780  sudo sysctl start ntpd
+  781  sudo nano /etc/ntp.conf
+  782  sysctl enable ntpd
+  783  sudo nano /etc/systemd/timesyncd.conf
+  784  sudo timedatectl set-ntp true
+  785  timedatectl status
+  786  date
+  787  sudo nano /etc/systemd/timesyncd.conf
+  788  sudo timedatectl set-ntp true
+  789  timedatectl status
+  790  sudo nano /etc/systemd/timesyncd.conf
+  791  sudo timedatectl set-ntp true
+  792  timedatectl status
+  793  timedatectl list-timezones
+  794  timedatectl set-timezone "Asia/Singapore"
+  795  timedatectl status
+  796  date
+  797  cp /etc/ntp.conf ~/CIT173_Lab10
+  798  history > ~/CIT173_Lab10/ex2-command-history.txt
